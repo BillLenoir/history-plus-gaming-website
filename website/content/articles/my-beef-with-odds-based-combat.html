@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>History + Gaming - My Beef with Odds-Based Combat</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
     <div class="outer-container">
       <div class="inner-container">
-
         <header>
-          <img src="../../assets/images/history_gaming_logo.png"
-            alt="The logo for the History + Gaming blog. This is a Venn diagram of History and Gaming, with an indication that Bill lives in the overlap." />
+          <a href="/"><img src="/assets/images/history_gaming_logo.png" alt="The logo for the History + Gaming blog. This is a Venn diagram of History and Gaming, with an indication that Bill lives in the overlap." /></a>
           <h1>From What Was to What Could Have Been: History at Play</h1>
           <nav></nav>
         </header>
@@ -47,114 +45,162 @@
 
             <p>And then, of course, the same four steps happen for the other side.</p>
 
-            <p>We need abstraction for a playable game — no question — but collapsing all this into a single random number based on a ratio feels wrong to me. Odds-based combat can sometimes approximate reasonable outcomes, but it breaksdown badly at the edges — and, worse, it subtly warps the way players think about real-world combat.</p>
+            <p>We need abstraction for a playable game — no question — but collapsing all this into a single random number based on a ratio feels wrong to me. Odds-based combat can sometimes approximate reasonable outcomes, but it badly at the edges — and, worse, it subtly warps the way players think about real-world combat.</p>
 
             <h3>The Odds-Based Approach to Combat Resolution</h3>
-            <p>Most wargames resolve combat by adding up the attacker’s strength, comparing it to the defender’s, and turning that into an odds ratio. It's simple, familiar, and quick. Let's take a look at an example from Chickamauga, part of SPI's Blue and Gray game:</p>
+            <p>Most war games resolve combat by adding up the attacker’s strength, comparing it to the defender’s, and turning that into an odds ratio. It's simple, familiar, and quick. Let's take a look at an example from Chickamauga, part of SPI's Blue and Gray game:</p>
             <figure>
-              <img src="../images/Blue-and-gray-combat-example.png" alt="A screen shot from a game where 4 Rebel brigades are attacking a single US brigade." width="50%"/>
+              <img src="/content/images/Blue-and-gray-combat-example.png" alt="A screen shot from a game on Chickamauga where 4 Rebel brigades are attacking a single US brigade." width="50%" />
               <figcaption>4 Rebel brigades with a total strength of 16 are attacking a single US brigade with a strength of 5.</figcaption>
             </figure>
             <p>In this attack, the odds are 16 Rebel strength to 5 US strength, which would use the 3:1 odds column (16:5 = 3.2:1, round down) on the Combat Results Table (CRT) below:</p>
             <figure>
-            <img src="../images/blue-and-gray-combat-results-table.webp"
-              alt="The Combat Results Table (CRT) from SPI's Blue vs. Gray game." />
-                            <figcaption>
-                The Combat Results Table (CRT) from SPI's Blue vs. Gray game. 
-              </figcaption>
-
+              <img src="/content/images/blue-and-gray-combat-results-table.webp" alt="The Combat Results Table (CRT) from SPI's Blue vs. Gray game." />
+              <figcaption>The Combat Results Table (CRT) from SPI's Blue vs. Gray game.</figcaption>
             </figure>
             <p>The possible results from a six-sided die roll:</p>
-              <ul>
-                <li><strong>1</strong>: Eliminate the US brigade.</li>
-                <li><strong>2-5</strong>: The US brigade retreats.</li>
-                <li><strong>6</strong>: Eliminate the US brigade and eliminate a number of Rebel brigades with a total strength of at least 5, which means you must eliminate 2 brigades.</li>
-              </ul>
-<p>Do some math, find the appropiate column, roll 1d6, apply the results. Next combat! What could be wrong with this approach?</p>
+            <ul>
+              <li>
+                <strong>1</strong>
+                : Eliminate the US brigade.
+              </li>
+              <li>
+                <strong>2-5</strong>
+                : The US brigade retreats.
+              </li>
+              <li>
+                <strong>6</strong>
+                : Eliminate the US brigade and eliminate a number of Rebel brigades with a total strength of at least 5, which means you must eliminate 2 brigades.
+              </li>
+            </ul>
+            <p>Do some math, find the appropriate column, roll 1d6, apply the results. Next combat! What could be wrong with this approach?</p>
             <h3>The Problems with Odds-Based Combat</h3>
 
             <p>Well, I see plenty wrong here.</p>
-            <ol class="list-with-emphasis"><li>
-                <p><strong>It Conflates the Ability to Deal Damage with the Ability to
-                  Absorb It</strong></p>
+            <ol class="list-with-emphasis">
+              <li>
+                <p><strong>It Conflates the Ability to Deal Damage with the Ability to Absorb It</strong></p>
 
-                <p>Combat boils down to four separate random processes: how much
-                  force each side can unleash, and how much each side can absorb. Odds-based systems jam these into a single dimension.</p>
+                <p>Combat boils down to four separate random processes: how much force each side can unleash, and how much each side can absorb. Odds-based systems jam these into a single dimension.</p>
                 <p>When you calculated the 3:1 ratio above, what exactly is being measured? Firepower? Resilience? Morale? The ratio tries to do too much with a single number — and that's why we frequently end up needing a pile of modifiers to fix obvious contradictions.</p>
 
                 <p>Imagine a WW2 light tank unit, crewed by the best tankers in history, attacking a unit of heavy tanks with green crews. The light tanks might dodge well, flank smartly, and cause temporary chaos — but their guns can’t seriously harm heavy armor. Conversely, even a clumsy heavy tank unit can wreck light tanks when they get a hit. How does a single 3:1 or 1:3 odds ratio capture that?</p>
               </li>
-            <li>
+              <li>
+                <p><strong>It Offers Too Few Possible Outcomes</strong></p>
 
-            <p><strong>It Offers Too Few Possible Outcomes</strong></p>
+                <p>Typical CRTs are based on 1d6, 2d6, or 1d10 rolls — six, eleven or ten outcomes. That's not nearly enough to model real-world variance.</p>
 
-            <p>Typical CRTs are based on 1d6, 2d6, or 1d10 rolls — six, eleven or ten outcomes. That's not nearly enough to model real-world variance.</p>
+                <p>Even if we assume two possible results (good or bad) for each of the four random processes I outlined earlier, that’s 16 combinations. If you have six gradations per process, that's 1,296 combinations.</p>
 
-            <p>Even if we  assume two possible results (good or bad) for each of the four random processes I outlined earlier, that’s 16 combinations. If you have  six gradations per process, that's 1,296 combinations.</p>
+                <p>More possible outcomes mean long tails, freak events, marginal victories, and (critically) no effect results — all of which happen constantly in real battles. It also means you can loosen up the effect on Side A from the effect on Side B, rather than tightly binding them together in a zero-sum dance.</p>
+              </li>
+              <li>
+                <p><strong>It Does Not Distinguish between Large and Small Combats</strong></p>
 
-            <p>More possible outcomes mean long tails, freak events, marginal victories, and (critically) no effect results — all of which happen constantly in real battles. It also means you can loosen up the effect on Side A from the effect on Side B, rather than tightly binding them together in a zero-sum dance.</p>
-            </li><li>
-            <p><strong>It Does Not Distinguish between Large and Small Combats</strong></p>
+                <p>Whether it's 16 to 5, 7 to 2, or even 300 to 100, the typical odds-based approach treats them the same. This system conflates the relative number of casualties with the absolute number of casualties. Yes, as you add more units to a battle, the number of casualties on both sides will increase, but the likelihood that a side will be completely eliminated decreases.</p>
+                <p>Some games have multiple CRTs which are used based on the size of the battle. I think this is a reasonable approach to bring odds-based combat closer to a realistic model, but it's yet another modifier to fix the system's obvious contradictions.</p>
+              </li>
+              <li>
+                <p><strong>It Misinterprets the 3:1 Rule</strong></p>
 
-            <p>Whether it's 16 to 5, 7 to 2, or even 300 to 100, the typical odds-based approach treats them the same. This system conflates the relative number of casualties with the absolute number of casualties. Yes, as you add more units to a battle, the number of casualties on both sides will increase, but the likelihood that a side will be comnpletely eliminated decreases.</p>
-            <p>Some games have multiple CRTs which are used based on the size of the battle. I think this is a reasonable approach to bring odds-based combat closer to a realistic model, but it's yet another modifier to fix the system's obvious contradictions.</p>
-</li><li>
-            <p><strong>It Misinterprets the 3:1 Rule</strong></p>
+                <p>Odds-based combat systems likely owe their existence to the U.S. Army’s famous 3:1 rule — the idea that attackers need a 3:1 advantage to have a good chance of success. But that rule is about absorbing the enemy’s fire as much as it is about delivering your own. You don't automatically win just because you have 3x the numbers; you win because you can lose 2x as much and still keep going. Odds-based combat forgets that subtlety and treats force ratios as a magic key to victory.</p>
+                <p>The 3:1 Rule is also about absolute numbers, but the strength points that are used to calculate the odds represent more than just the number of soldiers and equipment. Clearly 100 well-trained soldiers are going to perform better than 100 conscripts quickly thrown into battle. But how much better trained does the former force have to be in order to get to 2:1 odds? I think that's an unanswerable question.</p>
+              </li>
+              <li>
+                <p><strong>It Incentivizes Finding More Strength</strong></p>
 
-            <p>Odds-based combat systems likely owe their existence to the U.S. Army’s famous 3:1 rule — the idea that attackers need a 3:1 advantage to have a good chance of success. But that rule is about absorbing the enemy’s fire as much as it is about delivering your own. You don't automatically win just because you have 3x the numbers; you win because you can lose 2x as much and still keep going. Odds-based combat forgets that subtlety and treats force ratios as a magic key to victory.</p>
-            <p>The 3:1 Rule is also about absolute numbers, but the strength points that are used to calculate the odds represent more than just the number of soldiers and equipment. Clearly 100 well-trained soldiers are going to perform better than 100 conscripts quickly thrown into battle. But how much better trained does the former force have to be in order to get to 2:1 odds? I think that's an unanswerable question.</p>
-</li><li>
-  <p><strong>It Incentivizes Finding More Strength</strong></p>
+                <p>Increasing your strength in a fight seems like a reasonable approach. From the example above, if the Rebels had 14 strength points to the US's 5, that would be 2.8:1, rounding down to 2:1. If only the Rebel player could add just 1 more strength point to that fight, the odds would increase to 3:1. Players, then, are constantly on the lookout for additional units they can add to the fights the deem important. This, however, warps the game's incentives in a non-historical manner.</p>
+                <p>War games have some elements of role-playing games in that what the players are doing should mirror, to a certain extent, what the historical actors would be doing in the same situation. Given that, what does it mean after you've completed the movement of some of your units and totalled up the strength only to realize you're 1 point short of the next odds column? Even if the historical actor believes just one more batch of soldiers is enough to tilt the balance, finding them would take time. The effect, then, of looking for that additional strength is to stop time while the message is delivered to the extra unit and it marches over to participate in the battle. And this assumes the historical actor knows precisely the combat value of the involved units. This just doesn't ring true.</p>
+              </li>
+              <li>
+                <p><strong>Tradition Is a Hell of a Drug</strong></p>
 
-  <p>Increasing your strength in a fight seems like a reasonable approach. From the example above, if the rebels had 14 strength points to the US's 5, that would be 2.8:1, rounding down to 2:1. If only the Rebel player could add just 1 more strength point to that fight, the odds would increase to 3:1. Players, then, are constantly on the lookout for additional units they can add to the fights the deem important. This, however, warps the game's incentives in a non-historical manner.</p>
-  <p>First of all, strength, while certainly a factor in how a fight plays out, isn't the only factor and not even the most important. Quality trumps quantity, and, building on that, which side better has its act together is the primary determinant of how the combat resolves. Adding an additional brigade won't help if the Rebels don't have their act together. In fact, it may only serve to increase casualties on their side.</p>
-  <p>Secondly, the act of looking for one more unit to throw into the fight implies a pause before the combat while that side's command looks around for spare troops. 
-</li><li>
-            <p><strong>Tradition Is a Hell of a Drug</strong></p>
+                <p>In the end, I think odds-based systems stuck around because they’re easy to design, easy to teach, and players have been trained to expect them. They’re the standard — but just because something is standard doesn’t mean it’s good.</p>
 
-            <p>In the end, I think odds-based systems stuck around because they’re easy to design, easy to teach, and players have been trained to expect them. They’re the standard — but just because something is standard doesn’t mean it’s good.</p>
-
-            <p>If we want wargames that feel richer, more unpredictable, and closer to the real-world chaos they’re meant to model, we need to think beyond simple odds.</p>
-</li></ol>
+                <p>If we want war games that feel richer, more unpredictable, and closer to the real-world chaos they’re meant to model, we need to think beyond simple odds.</p>
+              </li>
+            </ol>
             <h3>Other Approaches to Combat Resolution</h3>
 
-            <p></p>
+            <p>Odds-based combat resolution is the most common system in war gaming. There are other options, though.</p>
 
             <h4>Roll to Hit</h4>
 
+            <p>This is an approach that, instead of using a combat results table, has the players rolling dice and examining the results to determine how much damage is inflicted upon the opponent. There's more decision making in this process, but it can involve rolling buckets of dice. Here is an example from War of 1812 from Columbia Games.</p>
+
+            <figure>
+              <img src="/content/images/War-of-1812-example.png" alt="A screen shot from a game on the War of 1812 where 3 British units are attacking 2 American units." width="50%" />
+              <figcaption>3 British with a total combat value of 8 are attacking a two American units with a total of 6.</figcaption>
+            </figure>
+
+            <p>In this attack, the Americans, as the defenders, can choose to stay and fight or retreat. If they fight, they roll 6 dice. For each result of 6, the British forces take a hit. Then the British player chooses to retreat or fight. This continues until one side is eliminated or retreat. Retreating is painful because your opponent gets one last shot, scoring hits one a 4-6!</p>
+
+            <p>I like this approach because it presents the players with the fight-or-flight decision. Unlike with odds-based combat, if things are going bad, you can cut your losses and run.</p>
+
+            <p>This approach, though, does have its limitations. Combats take much longer to resolve, so it limits the size of the conflicts the system can simulate. Also, the only attributes involved are the combat value of the units involved and the die value that results in a hit. This does not give the system much room to deal with variations among the units.</p>
             <p></p>
 
             <h4>Fire Combat</h4>
 
             <p></p>
 
+            <h3>A New Way of Thinking about Combat Resolution</h3>
+
+            <h4>The Primacy of Morale</h4>
+
+            <h4>Do You Have Your Act Together?</h4>
+
+            <h4>Baby Steps</h4>
+
+            <h4>What More?</h4>
+            <p></p>
+
+            <h3>Further Reading</h3>
+            <ul>
+              <li>
+                The history:
+                <ul>
+                  <li>
+                    <a href="https://en.wikipedia.org/wiki/Battle_of_Chickamauga">Battle of Chickamauga</a>
+                  </li>
+                  <li><a href="https://boardgamegeek.com/boardgame/1645/war-of-1812">War of 1812</a></li>
+                </ul>
+              </li>
+
+              <li>
+                The gaming:
+                <ul>
+                  <li>
+                    <a href="https://boardgamegeek.com/boardgame/13920/chickamauga-the-last-victory-20-september-1863">Chickamauga: The Last Victory, 20 September 1863</a>
+                    by SPI Games.
+                  </li>
+                  <li>
+                    <a href="https://boardgamegeek.com/boardgame/1645/war-of-1812">War of 1812</a>
+                    by Columbia Games
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </article>
         </main>
 
         <footer>
           <section id="license">
             <p>
-              All original content on <strong>History + Gaming</strong> is
-              licensed under a
-              <a rel="license"
-                href="https://creativecommons.org/licenses/by-nc/4.0/"
-                target="_blank">
-                Creative Commons Attribution-NonCommercial 4.0 International
-                License
-              </a>.
+              All original content on
+              <strong>History + Gaming</strong>
+              is licensed under a
+              <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License</a>
+              .
             </p>
             <p>
-              That means you can copy it, remix it, and share it — as long as
-              you:
-              <ul>
-                <li>Give credit to <strong>History + Gaming</strong>.</li>
-                <li>Keep it non-commercial (no selling, no ads, no
-                  profit-making).</li>
-              </ul>
+              That means you can copy it, remix it, and share it — as long as you give credit to
+              <strong>History + Gaming</strong>
+              and keep it non-commercial (no selling, no ads, no profit-making).
             </p>
           </section>
         </footer>
-
       </div>
     </div>
   </body>

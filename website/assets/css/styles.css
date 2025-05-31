@@ -92,9 +92,13 @@ article ol.list-with-emphasis li::marker {
   font-weight: bold;
 }
 
-article ol li, article ul li {
+article li {
     margin: 0 0 0.5em;
     font-size: 1.25em;
+}
+
+article li li {
+    font-size: 1em;
 }
 
 article p:not(li p) {
@@ -131,13 +135,9 @@ figure img {
 
 /* Footer */
 footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #000;
+    padding: 1em 3em;
     font-size: 0.875em;
-}
-
-section {
-   width: 60%;
-   margin: 1em auto;
 }
 
 /* Responsive tweaks */
